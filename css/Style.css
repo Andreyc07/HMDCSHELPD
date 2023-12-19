@@ -206,7 +206,15 @@ body {
   }
 
   .container {
+  display: grid;
+  margin-left: 10px;
+  grid-template-columns: 1fr;
+  place-items: start;
+  gap: 100px;
+  }
+  .smart, .computadores, .redes {
     display: flex;
+    align-items: center;
   }
 
   .container img {
@@ -219,6 +227,7 @@ body {
 
   .container a {
       transition: transform 0.2s;
+      height: 0;
   }
 
   .container a:hover {
